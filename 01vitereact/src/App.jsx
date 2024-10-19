@@ -1,8 +1,19 @@
+import Aman from "./Aman.jsx"
+
 function App() {
 
   return (
-   <h1>Learning React with vite | AMAN</h1>
-  )
+  //  <h1>Learning React with vite | AMAN</h1>
+  <>  
+  <Aman />
+  <h1>REACT SERIES</h1>
+  <p>testing paragraph</p>
+  </>
+  );
 }
 
 export default App
+
+// <> </> this we call fragment closing so then we can write multiple tages in this and not need to write again and again for everthing
+// this is bcz it can only return one element 
+
