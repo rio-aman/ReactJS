@@ -1,4 +1,5 @@
-import Aman from "./Aman.jsx"
+import Aman from "./Aman" //this also valid
+// import Aman from "./Aman.jsx" // this is default 
 
 function App() {
 
