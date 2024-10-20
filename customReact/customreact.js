@@ -1,15 +1,16 @@
-function customRender(reactElement,mainContainer){
+function customRender(reactElement,container){
     const domElement = document.createElement(reactElement.type)
-    domElement.innerHtml = reactElement.children
-    domElement.setAttribute('href',reactElement.props.href)
-    domElement.setAttribute('target',reactElement.props.target)
+    domElement.innerHTML = reactElement.children
+    domElement.setAttribute('href', reactElement.props.href)
+    domElement.setAttribute('target', reactElement.props.target)
 
-    mainContainer.appendChild(domElement)
+    container.appendChild(domElement)
 }
 
 // how does react see the element that we given in function
 const reactElement = {
-    type: 'a', //which type of element is that as div,p or as a tag etc
+    //which type of element is that as div,p or as a tag etc
+    type: 'a',
     props: {
         href: 'https://google.com',
         target: '_blank'
@@ -17,6 +18,6 @@ const reactElement = {
     children: 'Click me to visit google'
 }
 
-const mainContainer = document.getElementById('#root')
+const mainContainer = document.querySelector('#root')
 
-customRender(reactElement,mainContainer)
+customRender(reactElement, mainContainer)
