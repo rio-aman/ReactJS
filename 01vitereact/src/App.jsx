@@ -2,16 +2,18 @@ import Aman from "./Aman" //this also valid
 // import Aman from "./Aman.jsx" // this is default 
 
 function App() {
+  const username = "chai aur code"
 
   return (
   //  <h1>Learning React with vite | AMAN</h1>
   <>  
   <Aman />
-  <h1>REACT SERIES</h1>
+  <h1>React Series with {username}</h1>
   <p>testing paragraph</p>
   </>
   );
 }
+// {username} in react this is evealuted expression means final form of js
 
 export default App
 
