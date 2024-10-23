@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -11,13 +11,25 @@ function App() {
   // let counter = 15
 
   const addValue = () =>{
-    // console.log("clicked" , counter);
+    console.log("clicked" , counter);
     if (counter == 20) return console.log("No more updation in counter");
-    setcounter(counter + 1)
+    // interview question does below update counter four times or not if not then why 
+    // answer--  it will send them in 
+    // setcounter(counter + 1)
+    // setcounter(counter + 1)
+    // setcounter(counter + 1)
+    // setcounter(counter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
   } 
   const remValue = () =>{
-    // console.log("clicked" , counter);
+    console.log("clicked" , counter);
     if(counter == 0) return console.log("counter cannot be negative");
+    setcounter(counter - 1)
+    setcounter(counter - 1)
+    setcounter(counter - 1)
     setcounter(counter - 1)
   } 
 
@@ -40,3 +52,5 @@ function App() {
 export default App
 
 // basically hooks are the methods in react which is use to do changement in UI of react 
+
+// video part of a react interview questions on counter are importanat 
