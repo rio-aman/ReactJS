@@ -4,10 +4,10 @@
 import './App.css'
 import Card from './components/card'
 function App() {
-  let myobj = {
-    username: "AMAN",
-    age: 21
-  }
+  // let myobj = {
+  //   username: "AMAN",
+  //   age: 21
+  // }
 
   let newArr = [1,3,6]
 
