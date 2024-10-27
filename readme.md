@@ -10,3 +10,14 @@ ReactDOM creates its own dom which we call as VirtualDOM and it compares with we
 in react (package.json me react , react dom and react scripts bhi hoti ise waja se react ke index.html me script lekhte nahi hai kuyki vo at run add the script of index.js ) 
 
 but in vite we need to write in index.html
+
+
+if we want to use the component in one area instead of their above then we do prop drilling and for this context Api use as we globalised this componenet 
+
+and context api is purely for react so  for other their is REDUX 
+
+using in react we use react-Redux 
+
+and its easier library available that is RTK(Redux-toolkit)
+
+other that can do this state management system uis zustand
