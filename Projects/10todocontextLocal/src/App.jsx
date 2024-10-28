@@ -30,16 +30,20 @@ function App() {
           completed: !prevTodo.completed
         } : prevTodo))
   }
-
+  
+  // here all basic context functionality completed  
+  
+  // no here comes about local storage concept 
+  // local storage jo hai vo json ko string ke form me store karta hai to agar koyi value chaheye to use json me karke fir nikalna hoga 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"))
 
     // if (todos && todos.length > 0) { 
-    //this is imp to check todo is a Array or not otherwise code will not work which means we have to write the code in below way not above way 
-    if (Array.isArray(todos) && todos.length > 0) {
-      setTodos(todos)
-    }
-  }, [])
+      //this is imp to check todo is a Array or not otherwise code will not work which means we have to write the code in below way not above way 
+      if (Array.isArray(todos) && todos.length > 0) {
+        setTodos(todos)
+      }
+    }, [])
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos))
@@ -74,8 +78,3 @@ function App() {
 }
 
 export default App
-
-// here all basic context functionality completed  
-
-// no here comes about local storage concept 
-// local storage jo hai vo json ko string ke form me store karta hai to agar koyi value chaheye to use json me karke fir nikalna hoga 

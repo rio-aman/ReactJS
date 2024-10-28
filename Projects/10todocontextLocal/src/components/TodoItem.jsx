@@ -3,6 +3,15 @@ import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext';
 
 function TodoItem({todo}) {
+    /**
+     * jo ye araha hai object yahi is todo me aaraha hai 
+     * {
+            id: 1,
+            todo: "Todo msg",
+            completed: false,
+        } 
+        or isme todo ko use karraha hai below jo likha hai todo.todo
+     */
   const [isTodoEditable, setIsTodoEditable] = useState(false)
   const [todoMsg, setTodoMsg] = useState(todo.todo)
   const {updateTodo, deleteTodo, toggleComplete} = useTodo()
@@ -63,13 +72,3 @@ function TodoItem({todo}) {
 }
 
 export default TodoItem;
-
-    /**
-     * jo ye araha hai object yahi is todo me aaraha hai 
-     * {
-            id: 1,
-            todo: "Todo msg",
-            completed: false,
-        } 
-        or isme todo ko use karraha hai below jo likha hai todo.todo
-     */
