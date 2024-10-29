@@ -1,4 +1,4 @@
-#LEARNING ABOUT REACTJS 
+# LEARNING ABOUT REACTJS 
 
 
 we call this single page application because their only one index.html page exists  
@@ -21,3 +21,9 @@ using in react we use react-Redux
 and its easier library available that is RTK(Redux-toolkit)
 
 other that can do this state management system uis zustand
+
+## Redux
+
+for working context we want react and react-dom library same as for redux we have to use Redux and react-Redux(creates a bridge for react and redux connection) libraries
+
+before redux their is flux present which is architected by facebook bcz they also got the same state management problem 
