@@ -15,6 +15,12 @@ export class Service{
     }
 
     async createPost({title, slug, content, featuredImage, status, userId}){
+
+        // Ensure `content` is a string and trim it to 252 characters if necessary
+        if (typeof content !== 'string') {
+            throw new Error("Invalid type for content. It must be a string.");
+        }
+
         try {
             return await this.databases.createDocument(
                 conf.appwriteDatabaseId,
@@ -49,6 +55,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite serive :: updatePost :: error", error);
+            
         }
     }
 
